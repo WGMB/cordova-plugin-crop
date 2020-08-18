@@ -55,6 +55,9 @@
     self.callbackId = command.callbackId;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:cropController];
     
+    // Set fullscreen modal presentation style (iOS 13 fix for safe area)
+    navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+    
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
     }
