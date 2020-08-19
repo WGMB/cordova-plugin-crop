@@ -61,14 +61,6 @@
     <config-file target="AndroidManifest.xml" parent="application">
           <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
     </config-file>
-    
-<!--     <edit-config file="AndroidManifest.xml" target="/manifest/application/activity" mode="merge">
-      <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
-    </edit-config> -->
-
-<!--     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
-    </config-file> -->
 
     <config-file target="AndroidManifest.xml" parent="/manifest">
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
